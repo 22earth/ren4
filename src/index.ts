@@ -1,15 +1,20 @@
 import { Command } from 'commander';
+import { run } from './lib';
 
-const main = new Command('ren2');
-main
+const program = new Command('ren2');
+program
+  .arguments('<expression> [directory]')
   .description(
-    'An application for rename files or folders by using regular expressions'
+    'An application for rename files or folders by using regular expressions',
+    {
+      expression: 'sed regex expression',
+      directory: 'target directory',
+    }
   )
-  .usage('[global options] <expression> <dir>...')
-  .option('-p, --peppers', 'Add peppers')
-  .option('-f, --force', 'force apply changes');
-main.parse();
-
-const options = main.opts();
-
-if (options.peppers) console.log('  - peppers');
+  .option('-f, --force', 'force apply changes')
+  .option('-r, --recursive', 'recursively rename files')
+  .action((reStr, dir = '.', options) => {
+    run(reStr, dir, options);
+    console.log('sssssssss', reStr, dir, options);
+  });
+program.parse();
