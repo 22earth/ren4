@@ -1,4 +1,4 @@
-import module from './rollup.config.module'
-import prod from './rollup.config.prod'
+// import module from './rollup.config.module';
+import prod from './rollup.config.prod';
 
-export default [module,prod]
+export default [prod];

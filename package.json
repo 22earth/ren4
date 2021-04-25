@@ -11,7 +11,7 @@
     "test": "jest --all"
   },
   "bin": {
-    "ren2": "dist/bin.js"
+    "ren2": "dist/ren2.js"
   },
   "author": "22earth",
   "license": "MIT",
@@ -24,9 +24,11 @@
     "rollup-plugin-terser": "7.0.2",
     "rollup-plugin-typescript2": "0.30.0",
     "ts-jest": "26.5.5",
-    "ts-loader": "9.1.1",
     "ts-node": "9.1.1",
     "tslib": "2.2.0",
     "typescript": "4.2.4"
+  },
+  "dependencies": {
+    "commander": "^7.2.0"
   }
 }

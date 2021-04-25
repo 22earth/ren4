@@ -5,10 +5,12 @@ import pkg from '../package.json';
 export default {
   ...base,
   output: {
-    file: resolve(__dirname, '../', pkg.browser),
+    file: resolve(__dirname, '../', pkg.main),
     name: pkg.name,
-    format: 'umd',
-    sourcemap: true,
+    format: 'cjs',
+    // sourcemap: true,
+    banner: '#!/usr/bin/env node\n',
   },
+  external: ['commander'], // <-- suppresses the warning
   // plugins:[]
 };
