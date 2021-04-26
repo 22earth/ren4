@@ -5,6 +5,10 @@
   "main": "dist/ren2.js",
   "module": "dist/ren2.esm.js",
   "browser": "dist/ren2.umd.js",
+  "keywords": [
+    "fs",
+    "rename"
+  ],
   "scripts": {
     "build": "rollup -c build/rollup.config.js",
     "clean": "rimraf dist/",
@@ -13,7 +17,15 @@
   "bin": {
     "ren2": "dist/ren2.js"
   },
+  "files": [
+    "dist"
+  ],
   "author": "22earth",
+  "homepage": "https://github.com/22earth/ren2",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:22earth/ren2.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "18.0.0",

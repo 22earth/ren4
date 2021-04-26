@@ -11,10 +11,13 @@ program
       directory: 'target directory',
     }
   )
-  .option('-f, --force', 'force apply changes')
+  // .option('-f, --force', 'force apply changes')
   .option('-r, --recursive', 'recursively rename files')
-  .action((reStr, dir = '.', options) => {
-    run(reStr, dir, options);
-    console.log('sssssssss', reStr, dir, options);
+  .action(async (reStr: string, dir = '.', options) => {
+    try {
+      await run(reStr, dir, options);
+    } catch (error) {
+      console.error(error.message);
+    }
   });
 program.parse();
