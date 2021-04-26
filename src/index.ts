@@ -1,7 +1,7 @@
 import { Command } from 'commander';
 import { run } from './lib';
 
-const program = new Command('ren2');
+const program = new Command('ren4');
 program
   .arguments('<expression> [directory]')
   .description(

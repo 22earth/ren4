@@ -1,10 +1,10 @@
 {
-  "name": "ren2",
+  "name": "ren4",
   "version": "0.0.1",
   "description": "rename files or folders",
-  "main": "dist/ren2.js",
-  "module": "dist/ren2.esm.js",
-  "browser": "dist/ren2.umd.js",
+  "main": "dist/ren4.js",
+  "module": "dist/ren4.esm.js",
+  "browser": "dist/ren4.umd.js",
   "keywords": [
     "fs",
     "rename"
@@ -15,16 +15,16 @@
     "test": "jest --all"
   },
   "bin": {
-    "ren2": "dist/ren2.js"
+    "ren4": "dist/ren4.js"
   },
   "files": [
     "dist"
   ],
   "author": "22earth",
-  "homepage": "https://github.com/22earth/ren2",
+  "homepage": "https://github.com/22earth/ren4",
   "repository": {
     "type": "git",
-    "url": "git@github.com:22earth/ren2.git"
+    "url": "git@github.com:22earth/ren4.git"
   },
   "license": "MIT",
   "devDependencies": {
