@@ -1,5 +1,9 @@
 # ren4
 
+[![Build Status](https://img.shields.io/travis/22earth/ren4/main.svg?style=flat-square)](https://travis-ci.com/22earth/ren4.svg?branch=main)
+
+[![license](https://img.shields.io/github/license/22earth/ren4.svg?style=flat-square)](https://github.com/22earth/ren4/blob/main/LICENSE)
+
 An application for rename files or folders by using regular expressions.
 
 reference: Rust version [ren3](https://github.com/Aloxaf/ren3)
@@ -7,6 +11,12 @@ reference: Rust version [ren3](https://github.com/Aloxaf/ren3)
 ## Install
 
 **You’ll need to have Node 10.0.0 or later version**
+
+```shell
+> npm install -g ren4
+
+> ren4 's/.\*(\d+\.txt)/bar-$1'  targe_dir
+```
 
 ### npx
 
